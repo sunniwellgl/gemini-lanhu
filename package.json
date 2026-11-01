@@ -1,0 +1,36 @@
+{
+  "name": "gemini-lanhu",
+  "version": "1.0.0",
+  "description": "Lanhu (蓝湖) MCP integration for UI design inspection and slice export tailored for QML",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "gemini-lanhu": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "lanhu",
+    "qml",
+    "gemini-cli",
+    "design",
+    "slice"
+  ],
+  "author": "gaolin",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}

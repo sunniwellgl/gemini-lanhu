@@ -1,0 +1,15 @@
+{
+  "name": "gemini-lanhu",
+  "version": "1.0.0",
+  "description": "Lanhu (蓝湖) MCP integration for UI design inspection, element style extraction, and slice export tailored for Qt/QML development.",
+  "instructions": "Use these tools to inspect Lanhu (蓝湖) design files, search for layers and UI elements, extract QML-friendly properties (x, y, width, height, colors, fonts, borders, radius), and download slice assets directly into your project's assets/images directory.",
+  "mcpServers": {
+    "gemini-lanhu": {
+      "command": "node",
+      "args": [
+        "${extensionPath}/dist/index.js"
+      ]
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
