@@ -13,16 +13,24 @@
 
 ## 🛠️ 安装与启用
 
-在 Gemini CLI 中直接通过命令本地安装该扩展：
+### 方式一：通过 GitHub 一键安装（推荐）
+
+在终端中直接运行以下命令即可完成安装并自动启用：
 
 ```bash
-gemini extensions install /home/gaolin/gemini-extensions/gemini-lanhu
+gemini extensions install https://github.com/sunniwellgl/gemini-lanhu
 ```
 
-或在扩展项目目录内执行：
+### 方式二：本地克隆与开发模式
+
+如果你希望在本地进行调试或二次开发：
 
 ```bash
-gemini extensions install .
+git clone https://github.com/sunniwellgl/gemini-lanhu.git
+cd gemini-lanhu
+npm install
+npm run build
+gemini extensions link .
 ```
 
 ---
